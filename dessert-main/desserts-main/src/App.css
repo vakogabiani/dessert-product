@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap");
+
+body {
+  font-family: "Red Hat Text", serif;
+  font-optical-sizing: auto;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  text-align: center;
+}
+
+.desserts-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.dessert-card {
+  border: 2px solid transparent;
+  border-radius: 8px;
+  text-align: center;
+  padding: 1rem;
+}
+
+.dessert-card.in-cart {
+  border-color: red;
+}
+
+.cart {
+  padding: 1rem;
+  border-top: 1px solid #ccc;
+}
